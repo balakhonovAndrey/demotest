@@ -100,7 +100,7 @@ public class InsuranceTest {
         //Проверить, что у Поля - Эл. почта присутствует сообщение об ошибке - Введите корректный email
         element = driver.findElement(By.xpath("//span[@class='validation-error-text']"));
         if (element.isDisplayed()) {
-            System.out.println("Выведенно сообщение об ошибке!");
+            System.out.println("Выведенно сообщение об ошибке -> " + element.getText());
         }
 
         driver.quit();
